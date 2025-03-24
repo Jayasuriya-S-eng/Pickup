@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taxi Payment Page</title>
+</head>
+<body bgcolor="#f0f8ff">
+
+    <table width="50%" border="1" align="center" cellpadding="10">
+        <tr>
+            <th colspan="2">
+                <h2> Taxi Payment</h2>
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <form action="/process-payment" method="POST">
+                    <h3>Select Payment Method:</h3>
+
+                    <a href="qr.html" style="text-decoration: none;">
+                    <input type="radio" id="gpay" name="payment-method" value="gpay" required>
+                    <label for="gpay">Google Pay</label><br><br>
+                    <button type="button" >Proceed to Pay</button></a></a><br><br>
+
+                    <input type="radio" id="cash" name="payment-method" value="cash" required>
+                    <label for="cash">Cash on Ride</label><br><br>
+
+                    
+                        <a href="last.html" style="text-decoration: none;">
+                        <button type="button" >Get Bookingn Id</button></a>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
